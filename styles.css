@@ -1,13 +1,14 @@
 /* Default css styling */
-
 body {
-    margin: 1%;
-    height: 100%;
+    margin: 0%;
 }
 
 /* For all the navbar */
 .Navbar {
     display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(135, 143, 149, 0.5);
 }
 
 .Navbar div {
@@ -16,10 +17,24 @@ body {
     flex: 1;
 }
 
-/* 1.FOR THE LEFT SIDE OF NAVBAR */
-.Navbar.left {
-    flex: 1;
+/* FOR THE LEFT SIDE OF NAVBAR */
+
+.Navbar.left div{
+    display:flex;
+    justify-content: center;
     align-items: center;
 }
+.Navbar.left a{
+    text-decoration: none;
+    color:black;
+}
 
-/* 2.FOR THE LEFT SIDE OF NAVBAR */
+/* Introducerea cu transport marfa international */
+.Titlu.vizibil{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0,102,102);
+}
+
+
