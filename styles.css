@@ -1,0 +1,25 @@
+/* Default css styling */
+
+body {
+    margin: 1%;
+    height: 100%;
+}
+
+/* For all the navbar */
+.Navbar {
+    display:flex;
+}
+
+.Navbar div {
+    width: 60px;
+    height: 60px;
+    flex: 1;
+}
+
+/* 1.FOR THE LEFT SIDE OF NAVBAR */
+.Navbar.left {
+    flex: 1;
+    align-items: center;
+}
+
+/* 2.FOR THE LEFT SIDE OF NAVBAR */
