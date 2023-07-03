@@ -1,20 +1,28 @@
 /* Default css styling */
-body {
+html,body {
     margin: 0%;
+    height: 100%;
 }
 
+h1, h2, h3, h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 /* For all the navbar */
 .Navbar {
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(135, 143, 149, 0.5);
+    background-color: #343a40;
 }
 
 .Navbar div {
     width: 60px;
     height: 60px;
     flex: 1;
+}
+
+.Navbar h3 {
+    color: white;
 }
 
 /* FOR THE LEFT SIDE OF NAVBAR */
@@ -24,17 +32,26 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .Navbar.left a{
     text-decoration: none;
     color:black;
 }
 
 /* Introducerea cu transport marfa international */
-.Titlu.vizibil{
-    margin-top: 10px;
+.Introducere{
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    background-color: rgb(0,102,102);
+    background-color: #bebfc1;
+    flex-direction: column;
+    align-items: center;
 }
+
+.Introducere #vechime{
+    
+}
+
+
 
 
