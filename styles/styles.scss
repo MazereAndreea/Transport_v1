@@ -1,18 +1,8 @@
 /* Default css styling */
-html,body {
-    margin: 0%;
-    height: 100%;
-    width: 100%;
-}
 
-html{
-    overflow-y: scroll;
-}
-
-body{
-    position: absolute;
-    font-family: 'Montserrat', sans-serif;
-}
+@import "fonts";
+@import "colors";
+@import "global";
 
 /* For all the navbar */
 .Navbar {
