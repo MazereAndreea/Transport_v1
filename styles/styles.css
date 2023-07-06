@@ -11,11 +11,9 @@ html{
 
 body{
     position: absolute;
+    font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3, h4{
-    font-family: Inter,sans-serif;
-}
 /* For all the navbar */
 .Navbar {
     display:flex;
@@ -43,6 +41,10 @@ h1, h2, h3, h4{
     text-decoration: none;
     color:rgb(255, 255, 255);
     font-size: 20px;
+}
+
+.Navbar.left a:hover{
+    color: #B4B9BC;
 }
 
 
