@@ -12,3 +12,7 @@ body{
     position: absolute;
     font-family: $content_font;
 }
+
+* {
+    box-sizing: border-box;
+}

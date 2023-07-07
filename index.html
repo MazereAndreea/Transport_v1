@@ -1,86 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link href="styles/styles.css" rel="stylesheet" />
-        <!-- Font for titles: -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        
-        <title>VITAL COMIMPEX SRL</title>
-    </head>
-    <body>
-        <div class="Navbar">
-            <!-- Navbar -->
-            <div class="Navbar left">
-                <div>
-                    <img style="max-width: 70%; max-height: 70%" 
-                        src="resources/links_and_images/logo.png">
-                </div>
-                <div>
-                    <a href="#inceput_de_pagina">
-                        About us
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        Experience
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        Contact
-                    </a>
-                </div>
-            </div>
-            <div class="Navbar right">
 
-            </div>
-        </div>
-        <div id="Intro">
-            <!-- It might seem that div below is useless but it's not
-            DON'T DELETE IT. It uses display: flex and is responsible for
-            arranging the round blue boxes on the site, horizontally -->
-            <div> 
-                <h1 class="title">International transport in Europe</h1>
-                <div>
-                    <div class="qualities">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check styles_icon__3b_Od" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
-                        </svg>
-                    Professionalism
-                        
-                    </div>
-                    <div class="qualities">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check styles_icon__3b_Od" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
-                        </svg>
-                        Fast service
-                    </div>
-                    <div class="qualities">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check styles_icon__3b_Od" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
-                        </svg>
-                        Secure
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="AboutUs">
-            <div class="AboutUsText">
-                <h1 class="title">
-                    About us
-                </h1>
-                <h3>
-                    Established over 25 years ago, our transportation company has proudly served the community with a commitment to safety, reliability, and exceptional customer service. With an impeccable track record and a dedication to providing secure transportation solutions, we have built a reputation that you can trust.
+<head>
+    <meta charset="utf-8" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <!-- Font for titles: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- In case I need to use JQuery: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>VITAL COMIMPEX SRL</title>
+</head>
 
-At our core, we understand that trust is the foundation of any successful transportation service. We are proud to say that throughout our extensive history, we have never experienced a single incident. This remarkable accomplishment reflects our unwavering commitment to prioritizing safety and maintaining the highest standards in the industry.
-                </h3>
+<body>
+    <div class="Navbar">
+        <!-- Navbar -->
+        <div class="Navbar left">
+            <div>
+                <img style="max-width: 70%; max-height: 70%" src="resources/links_and_images/logo.png">
             </div>
             <div>
-                <img src="resources/links_and_images/logistic.svg">
-                    
-                
+                <a href="#inceput_de_pagina">
+                    About us
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    Experience
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    Contact
+                </a>
             </div>
         </div>
-        <script src="scripts/scripts.js"></script>
-    </body>
+        <div class="Navbar right">
+
+        </div>
+    </div>
+    <div id="Intro">
+        <!-- It might seem that div below is useless but it's not
+            DON'T DELETE IT. It uses display: flex and is responsible for
+            arranging the round blue boxes on the site, horizontally -->
+        <div>
+            <h1 class="title">International transport in Europe</h1>
+            <div>
+                <div class="qualities">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
+                        class="svg-inline--fa fa-check styles_icon__3b_Od" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                        </path>
+                    </svg>
+                    Professionalism
+
+                </div>
+                <div class="qualities">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
+                        class="svg-inline--fa fa-check styles_icon__3b_Od" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                        </path>
+                    </svg>
+                    Fast service
+                </div>
+                <div class="qualities">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
+                        class="svg-inline--fa fa-check styles_icon__3b_Od" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                        </path>
+                    </svg>
+                    Secure
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="AboutUs">
+        <div class="AboutUsText">
+            <h1 class="title">
+                About us
+            </h1>
+            <h3 id="AboutUsText">
+                <pre>
+                Established over 25 years ago, our transportation company has proudly served the community with a
+                commitment to safety, reliability, and exceptional customer service. With an impeccable track record and
+                a dedication to providing secure transportation solutions, we have built a reputation that you can
+                trust.
+
+                At our core, we understand that trust is the foundation of any successful transportation service. We are
+                proud to say that throughout our extensive history, we have never experienced a single incident. This
+                remarkable accomplishment reflects our unwavering commitment to prioritizing safety and maintaining the
+                highest standards in the industry.
+
+                When you choose our transportation services, you can rest assured that your journey will be smooth,
+                secure, and worry-free. Our team of experienced professionals is meticulously trained to ensure that
+                every aspect of your transportation experience is handled with the utmost care. From our dedicated
+                drivers to our knowledgeable support staff, we are passionate about delivering an exceptional service
+                that exceeds your expectations.
+
+                Reliability is the cornerstone of our operations. We understand that punctuality and dependability are
+                crucial to our customers, whether they are business professionals on tight schedules or families
+                embarking on a vacation. With our state-of-the-art fleet of well-maintained vehicles, we are committed
+                to providing reliable transportation services that get you to your destination on time, every time.
+
+                Beyond our commitment to safety and reliability, we strive to create an environment that fosters trust
+                and peace of mind for our customers. We prioritize open communication and transparency, ensuring that
+                you are well-informed throughout the entire journey. Our friendly and professional staff are always
+                ready to address any questions or concerns you may have, offering personalized support to ensure your
+                complete satisfaction.
+
+                As a trusted transportation company, we take great pride in serving our community. Over the years, we
+                have established strong relationships with our customers, and we cherish the opportunity to be a part of
+                their journeys. Whether it's a daily commute, a special event, or an airport transfer, we are honored to
+                be your preferred transportation partner.
+
+                Thank you for considering our transportation services. We look forward to providing you with a reliable
+                and secure transportation experience that will earn your trust and keep you coming back for all your
+                future travel needs.
+                </pre>
+            </h3>
+        </div>
+        <div>
+            <img src="resources/links_and_images/logistic.svg">
+        </div>
+    </div>
+    <script src="scripts/scripts.js"></script>
+</body>
+
 </html>
