@@ -31,6 +31,21 @@ a:hover {
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  background-color: rgba(0, 97, 255, 0.7490196078);
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  font-family: "Montserrat", sans-serif;
+}
+
 /* For all the navbar */
 .Navbar {
   display: flex;
@@ -41,7 +56,7 @@ a:hover {
 
 .Navbar div {
   width: 60px;
-  height: 60px;
+  height: 70px;
   flex: 1;
 }
 
@@ -97,6 +112,7 @@ a:hover {
   display: flex;
   height: -moz-min-content;
   height: min-content;
+  margin-bottom: 50px;
 }
 
 #AboutUs .AboutUsText {
@@ -128,7 +144,6 @@ a:hover {
   float: right;
   margin-right: 100px;
   padding: 10px 10px 10px 10px;
-  font-weight: bold;
   border-style: ridge;
   border-color: beige;
   margin-bottom: 20px;
@@ -146,4 +161,88 @@ a:hover {
 .AboutUsText {
   background-color: #343a40;
   color: #fff;
+}
+
+#Experience {
+  gap: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  height: -moz-min-content;
+  height: min-content;
+  margin-bottom: 50px;
+}
+
+#Experience .ExperiencePicture {
+  flex: 2;
+  background-color: blue;
+}
+
+#Experience .ExperienceText {
+  border-radius: 20px;
+  flex: 1.5;
+  box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
+}
+
+#Experience .ExperienceText .title {
+  font-style: italic;
+}
+
+#Experience .ExperienceText p {
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+#Experience .ExperienceText .title p {
+  font-size: 30px;
+}
+
+#Experience .ExperienceText .request_quotation {
+  background-color: rgba(0, 97, 255, 0.7490196078);
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
+  margin-right: 100px;
+  padding: 10px 10px 10px 10px;
+  border-style: ridge;
+  border-color: beige;
+  margin-bottom: 20px;
+}
+
+#Experience .ExperienceText p {
+  word-spacing: 3px;
+}
+
+.ExperienceText {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.footer {
+  height: 300px;
+  width: 100%;
+  background-color: #343a40;
+  display: flex;
+  color: white;
+}
+
+.first, .second, .third {
+  flex: 1;
+  margin: 20px 20px 20px 20px;
+}
+
+.footer .second {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.third {
+  text-align: center;
+}
+
+.third .title {
+  padding-bottom: 20px;
 }/*# sourceMappingURL=styles.css.map */

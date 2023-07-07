@@ -25,3 +25,14 @@ a{
 a:hover{
     color: #B4B9BC;
 }
+
+.title{
+    font-family: $title_font;
+}
+
+button{
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
