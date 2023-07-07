@@ -1,8 +1,12 @@
 /* Default css styling */
 
-@import "global";
 @import "fonts";
 @import "colors";
+@import "global";
+
+.title{
+    font-family: $title_font;
+}
 
 /* For all the navbar */
 .Navbar {
@@ -38,6 +42,8 @@
 }
 
 
+// The second section of the website after navbar
+
 #Intro{
     margin-top:100px;
 }
@@ -72,3 +78,19 @@
     font-weight:700;
     display:inline-flex;
 }
+
+// About us section
+
+#AboutUs { 
+    margin-top: 100px;
+    display: flex;
+}
+
+#AboutUs div{
+    flex: 1;
+}
+
+
+
+
+

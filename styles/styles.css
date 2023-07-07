@@ -11,6 +11,11 @@ html {
 
 body {
   position: absolute;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
 }
 
 /* For all the navbar */
@@ -76,4 +81,13 @@ body {
   background: rgba(0, 97, 255, 0.7490196078);
   font-weight: 700;
   display: inline-flex;
+}
+
+#AboutUs {
+  margin-top: 100px;
+  display: flex;
+}
+
+#AboutUs div {
+  flex: 1;
 }/*# sourceMappingURL=styles.css.map */
