@@ -12,32 +12,39 @@
     justify-content: center;
     align-items: center;
     background-color: $primary_color;
-}
 
-.Navbar div {
-    width: 60px;
-    height: 70px;
-    flex: 1;
+    div{
+        width: 60px;
+        height: 70px;
+        flex: 1;
+    }
 }
 
 /* FOR THE LEFT SIDE OF NAVBAR */
 
-.Navbar.left div{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
+.Navbar.left {
+    div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.Navbar.left a{
-    font-size: 20px;
+    a{
+        font-size: 20px;
+    }
 }
 
 // The second section of the website after navbar
 
 #Intro{
+   
     padding-top: 100px;
     padding-bottom: 100px;
     
+    h1{
+        text-align:center;
+        font-size:48px;
+    }
 }
 
 
@@ -50,143 +57,129 @@
     color: #00d18a;
 }
 
-#Intro h1{
-    text-align:center;
-    font-size:48px;
-}
-
-#Intro > div > div{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    
-}
-
-#Intro > div > div > div.qualities{
-    padding: 4px 16px 4px 12px;
-    color: #fff;
-    border-radius: 24px;
-    background: $second_color;
-    font-weight:700;
-    display:inline-flex;
-}
+#Intro {
+    div {
+      div {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+  
+            div.qualities {
+            padding: 4px 16px 4px 12px;
+            color: #fff;
+            border-radius: 24px;
+            background: $second_color;
+            font-weight: 700;
+            display: inline-flex;
+            }
+      }
+    }
+  }
 
 // About us section
 
-#AboutUs { 
+#AboutUs {
     gap: 50px;
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
     height: min-content;
     margin-bottom: 50px;
-}
-
-
-#AboutUs .AboutUsText{
-    border-radius: 20px;
-    flex: 2;
-    box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
-}
-
-#AboutUs .AboutUsText .title{
-    font-style: italic;
-}
-
-#AboutUs .AboutUsText p{
-    margin-left:50px;
-    margin-right:50px;
-    justify-content: center;
-    font-weight: bold;
-    font-size: large;
-}
-
-#AboutUs .AboutUsText .title p{
-    font-size: 30px;
-}
-
-#AboutUs .AboutUsText .request_quotation{
-    background-color: $second_color;
-    width: fit-content;
-    float:right;
-    margin-right: 100px;
-    padding: 10px 10px 10px 10px;
-    border-style: ridge;
-    border-color: beige;
-    margin-bottom: 20px;
-}
-
-#AboutUs .AboutUsText p{
-    word-spacing:3px;
-}
-
-.AboutUsText + div {
-    flex: 1.5;
-    background-color: blue;
-}
-
-.AboutUsText {
-    background-color: $primary_color;
-    color:#fff;
-}
+  
+    .AboutUsText {
+      border-radius: 20px;
+      flex: 2;
+      box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
+      background-color: $primary_color;
+      color: #fff;
+  
+      .title {
+        font-style: italic;
+            p {
+            font-size: 30px;
+            }
+        }
+  
+      p {
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: center;
+        font-weight: bold;
+        font-size: large;
+        word-spacing: 3px;
+      }
+  
+      .request_quotation {
+        background-color: $second_color;
+        width: fit-content;
+        float: right;
+        margin-right: 100px;
+        padding: 10px 10px 10px 10px;
+        border-style: ridge;
+        border-color: beige;
+        margin-bottom: 20px;
+      }
+  
+      + div {
+        flex: 1.5;
+        background-color: blue;
+      }
+  
+    }
+  }
 
 // Experience section
 
-#Experience{
+#Experience {
     gap: 50px;
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
     height: min-content;
     margin-bottom: 50px;
-}
+  
+    .ExperiencePicture {
+      flex: 2;
+      background-color: blue;
+    }
+  
+    .ExperienceText {
+      border-radius: 20px;
+      flex: 1.5;
+      box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
+      background-color: $primary_color;
+      color: #fff;
 
-#Experience .ExperiencePicture{
-    flex: 2;
-    background-color: blue;
-}
-
-#Experience .ExperienceText{
-    border-radius: 20px;
-    flex: 1.5;
-    box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
-}
-
-#Experience .ExperienceText .title{
-    font-style: italic;
-}
-
-#Experience .ExperienceText p{
-    margin-left:50px;
-    margin-right:50px;
-    justify-content: center;
-    font-weight: bold;
-    font-size: large;
-}
-
-#Experience .ExperienceText .title p{
-    font-size: 30px;
-}
-
-#Experience .ExperienceText .request_quotation{
-    background-color: $second_color;
-    width: fit-content;
-    float:right;
-    margin-right: 100px;
-    padding: 10px 10px 10px 10px;
-    border-style: ridge;
-    border-color: beige;
-    margin-bottom: 20px;
-}
-
-#Experience .ExperienceText p{
-    word-spacing:3px;
-}
-
-.ExperienceText {
-    background-color: $primary_color;
-    color:#fff;
-}
+      .title {
+        font-style: italic;
+        p {
+          font-size: 30px;
+        }
+      }
+  
+      p {
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: center;
+        font-weight: bold;
+        font-size: large;
+        word-spacing: 3px;
+      }
+  
+      .request_quotation {
+        background-color: $second_color;
+        width: fit-content;
+        float: right;
+        margin-right: 100px;
+        padding: 10px 10px 10px 10px;
+        border-style: ridge;
+        border-color: beige;
+        margin-bottom: 20px;
+      }
+  
+    }
+  }
+  
 
 // Footer:
 
@@ -196,6 +189,11 @@
     background-color: $primary_color;
     display: flex;
     color: white;
+
+    .second{
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
 }
 
 .first, .second, .third{
@@ -203,15 +201,11 @@
     margin: 20px 20px 20px 20px;
 }
 
-.footer .second{
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-}
-
 .third{
     text-align: center;
+
+    .title{
+        padding-bottom: 20px;
+    }
 }
 
-.third .title{
-    padding-bottom: 20px;
-}
