@@ -4,13 +4,7 @@
 @import "colors";
 @import "global";
 
-.button{
-    background-color: $second_color;
-    color:white;
-    font-weight: bold;
-    font-size: medium;
-    font-family: $content_font;
-}
+@import "form";
 
 /* For all the navbar */
 .Navbar {
@@ -221,6 +215,3 @@
 .third .title{
     padding-bottom: 20px;
 }
-
-
-

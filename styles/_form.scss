@@ -1,0 +1,15 @@
+
+button{
+    background-color: $second_color;
+    color:white;
+    font-weight: bold;
+    font-size: medium;
+    font-family: $content_font;
+}
+
+.form{
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+}

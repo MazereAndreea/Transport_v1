@@ -38,12 +38,19 @@ button {
   cursor: pointer;
 }
 
-.button {
+button {
   background-color: rgba(0, 97, 255, 0.7490196078);
   color: white;
   font-weight: bold;
   font-size: medium;
   font-family: "Montserrat", sans-serif;
+}
+
+.form {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 5%;
 }
 
 /* For all the navbar */
