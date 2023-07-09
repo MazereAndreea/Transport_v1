@@ -1,8 +1,6 @@
 /* Default css styling */
 html, body {
   margin: 0%;
-  height: 100%;
-  width: 100%;
 }
 
 html {
@@ -11,7 +9,8 @@ html {
 
 body {
   position: absolute;
-  font-family: "Montserrat", sans-serif;
+  font-family: Spartan, sans-serif;
+  width: 100%;
 }
 
 * {
@@ -38,21 +37,134 @@ button {
   cursor: pointer;
 }
 
-button {
-  background-color: rgba(0, 97, 255, 0.7490196078);
-  color: white;
-  font-weight: bold;
-  font-size: medium;
-  font-family: "Montserrat", sans-serif;
-}
-
-.form {
+#form {
   display: none;
   position: fixed;
-  left: 45%;
-  top: 5%;
+  bottom: 0;
+  right: 15px;
+  background: rgb(255, 106, 0);
+  border: 3px ridge;
+  border-radius: 40px;
+  text-align: center;
+}
+#form form {
+  max-width: 400px;
+  padding: 20px;
+}
+#form form input[type=text], #form form input[type=tel] {
+  margin: 10px;
+  width: 100%;
+}
+#form form input[type=text] {
+  padding: 10px;
+}
+#form form input[type=text]:focus, #form form input[type=tel]:focus {
+  outline: none;
 }
 
+@media only screen and (max-width: 1025px) and (min-width: 480px) {
+  #AboutUs {
+    flex-direction: column;
+  }
+  #Experience {
+    flex-direction: column;
+  }
+  #Experience .ExperiencePicture {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #AboutUs {
+    gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    height: -moz-min-content;
+    height: min-content;
+    margin-bottom: 50px;
+  }
+  #AboutUs .AboutUsText {
+    border-radius: 20px;
+    flex: 2;
+    box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
+    background-color: #343a40;
+    color: #fff;
+  }
+  #AboutUs .AboutUsText .title {
+    font-style: italic;
+  }
+  #AboutUs .AboutUsText .title p {
+    font-size: 30px;
+  }
+  #AboutUs .AboutUsText p {
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+    word-spacing: 3px;
+  }
+  #AboutUs .AboutUsText .request_quotation {
+    background-color: rgba(0, 97, 255, 0.7490196078);
+    width: -moz-fit-content;
+    width: fit-content;
+    float: right;
+    margin-right: 100px;
+    padding: 10px 10px 10px 10px;
+    border-style: ridge;
+    border-color: beige;
+    margin-bottom: 20px;
+  }
+  #AboutUs .AboutUsText + div {
+    flex: 1.5;
+    background-color: blue;
+  }
+  #Experience {
+    gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    height: -moz-min-content;
+    height: min-content;
+    margin-bottom: 50px;
+  }
+  #Experience .ExperiencePicture {
+    flex: 2;
+    background-color: blue;
+  }
+  #Experience .ExperienceText {
+    border-radius: 20px;
+    flex: 1.5;
+    box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
+    background-color: #343a40;
+    color: #fff;
+  }
+  #Experience .ExperienceText .title {
+    font-style: italic;
+  }
+  #Experience .ExperienceText .title p {
+    font-size: 30px;
+  }
+  #Experience .ExperienceText p {
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+    word-spacing: 3px;
+  }
+  #Experience .ExperienceText .request_quotation {
+    background-color: rgba(0, 97, 255, 0.7490196078);
+    width: -moz-fit-content;
+    width: fit-content;
+    float: right;
+    margin-right: 100px;
+    padding: 10px 10px 10px 10px;
+    border-style: ridge;
+    border-color: beige;
+    margin-bottom: 20px;
+  }
+}
 /* For all the navbar */
 .Navbar {
   display: flex;
@@ -94,19 +206,21 @@ button {
   color: #00d18a;
 }
 
-#Intro > div > div {
+#Intro div div {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  margin-right: 40px;
 }
-
-#Intro > div > div > div.qualities {
+#Intro div div div.qualities {
   padding: 4px 16px 4px 12px;
   color: #fff;
   border-radius: 24px;
   background: rgba(0, 97, 255, 0.7490196078);
   font-weight: 700;
   display: inline-flex;
+}
+#Intro div div:last-child {
+  margin-right: 0;
 }
 
 #AboutUs {
@@ -118,29 +232,27 @@ button {
   height: min-content;
   margin-bottom: 50px;
 }
-
 #AboutUs .AboutUsText {
   border-radius: 20px;
   flex: 2;
   box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
+  background-color: #343a40;
+  color: #fff;
 }
-
 #AboutUs .AboutUsText .title {
   font-style: italic;
 }
-
+#AboutUs .AboutUsText .title p {
+  font-size: 30px;
+}
 #AboutUs .AboutUsText p {
   margin-left: 50px;
   margin-right: 50px;
   justify-content: center;
   font-weight: bold;
   font-size: large;
+  word-spacing: 3px;
 }
-
-#AboutUs .AboutUsText .title p {
-  font-size: 30px;
-}
-
 #AboutUs .AboutUsText .request_quotation {
   background-color: rgba(0, 97, 255, 0.7490196078);
   width: -moz-fit-content;
@@ -152,19 +264,16 @@ button {
   border-color: beige;
   margin-bottom: 20px;
 }
-
-#AboutUs .AboutUsText p {
-  word-spacing: 3px;
+#AboutUs .AboutUsText .request_quotation button {
+  background-color: rgba(0, 97, 255, 0.7490196078);
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  font-family: Spartan, sans-serif;
 }
-
-.AboutUsText + div {
+#AboutUs .AboutUsText + div {
   flex: 1.5;
   background-color: blue;
-}
-
-.AboutUsText {
-  background-color: #343a40;
-  color: #fff;
 }
 
 #Experience {
@@ -176,34 +285,31 @@ button {
   height: min-content;
   margin-bottom: 50px;
 }
-
 #Experience .ExperiencePicture {
   flex: 2;
   background-color: blue;
 }
-
 #Experience .ExperienceText {
   border-radius: 20px;
   flex: 1.5;
   box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
+  background-color: #343a40;
+  color: #fff;
 }
-
 #Experience .ExperienceText .title {
   font-style: italic;
 }
-
+#Experience .ExperienceText .title p {
+  font-size: 30px;
+}
 #Experience .ExperienceText p {
   margin-left: 50px;
   margin-right: 50px;
   justify-content: center;
   font-weight: bold;
   font-size: large;
+  word-spacing: 3px;
 }
-
-#Experience .ExperienceText .title p {
-  font-size: 30px;
-}
-
 #Experience .ExperienceText .request_quotation {
   background-color: rgba(0, 97, 255, 0.7490196078);
   width: -moz-fit-content;
@@ -215,14 +321,12 @@ button {
   border-color: beige;
   margin-bottom: 20px;
 }
-
-#Experience .ExperienceText p {
-  word-spacing: 3px;
-}
-
-.ExperienceText {
-  background-color: #343a40;
-  color: #fff;
+#Experience .ExperienceText .request_quotation button {
+  background-color: rgba(0, 97, 255, 0.7490196078);
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  font-family: Spartan, sans-serif;
 }
 
 .footer {
@@ -232,21 +336,19 @@ button {
   display: flex;
   color: white;
 }
+.footer .second {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
 
 .first, .second, .third {
   flex: 1;
   margin: 20px 20px 20px 20px;
 }
 
-.footer .second {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-}
-
 .third {
   text-align: center;
 }
-
 .third .title {
   padding-bottom: 20px;
 }/*# sourceMappingURL=styles.css.map */

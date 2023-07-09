@@ -1,15 +1,29 @@
-
-button{
-    background-color: $second_color;
-    color:white;
-    font-weight: bold;
-    font-size: medium;
-    font-family: $content_font;
-}
-
-.form{
+#form{
     display: none;
     position: fixed;
-    left: 45%;
-    top: 5%;
+    bottom: 0;
+    right: 15px;
+    background: rgb(255, 106, 0);
+    border: 3px ridge;
+    border-radius: 40px;
+    text-align: center;
+
+    form{
+      max-width: 400px;
+      padding: 20px;
+
+      input[type=text], input[type=tel]{
+        margin: 10px;
+        width: 100%;
+     }
+
+      input[type=text]{
+        padding: 10px;
+      }
+
+      input[type=text]:focus, input[type=tel]:focus{
+        outline: none;
+      }
+    }
+    
 }

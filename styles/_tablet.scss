@@ -1,0 +1,21 @@
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+
+// About us section
+
+@media only screen and (max-width: 1025px) and (min-width: 480px){
+    #AboutUs {
+        flex-direction: column;
+    
+    }
+
+    // Experience section
+
+    #Experience {  
+        flex-direction: column;
+        
+        .ExperiencePicture {
+            height: 400px;
+        }
+    }
+}

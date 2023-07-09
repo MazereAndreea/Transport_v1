@@ -6,6 +6,15 @@
 
 @import "form";
 
+@import "tablet";
+@import "desktop";
+
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV
+
 /* For all the navbar */
 .Navbar {
     display:flex;
@@ -62,7 +71,7 @@
       div {
         display: flex;
         justify-content: center;
-        gap: 40px;
+        margin-right: 40px;
   
             div.qualities {
             padding: 4px 16px 4px 12px;
@@ -72,6 +81,10 @@
             font-weight: 700;
             display: inline-flex;
             }
+      }
+
+      div:last-child{
+        margin-right: 0;
       }
     }
   }
@@ -118,8 +131,18 @@
         border-style: ridge;
         border-color: beige;
         margin-bottom: 20px;
+         
+        button{
+          background-color: $second_color;
+          color:white;
+          font-weight: bold;
+          font-size: medium;
+          font-family: $content_font;
+        }
+      
+        //the form is in the _form.scss file
       }
-  
+
       + div {
         flex: 1.5;
         background-color: blue;
@@ -175,8 +198,16 @@
         border-style: ridge;
         border-color: beige;
         margin-bottom: 20px;
+
+        button{
+          background-color: $second_color;
+          color:white;
+          font-weight: bold;
+          font-size: medium;
+          font-family: $content_font;
+        }
       }
-  
+       //the form is in the _form.scss file
     }
   }
   

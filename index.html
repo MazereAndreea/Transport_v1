@@ -7,7 +7,7 @@
     <!-- Font for titles: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <!-- In case I need to use JQuery: -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>VITAL COMIMPEX SRL</title>
@@ -108,17 +108,20 @@
                 -->
             </h3>
             <div class="request_quotation">
-                <button class="button" onclick = "openForm()">Request quatation</button>
+                <button onclick = "openForm()">Request quatation</button>
            </div>
            <!-- The popup form -->
-           <div class="form">
+           <div id="form">
             
                 <form>
                     <h1 class="title">Request quotation</h1>
                     <label for="name">Individual/Company*</label>
                     <input type="text" id="name" name="name" maxlength="50" required>
                     <label for="tel">Telephone</label>
-                    <input type="tel" id="tel" name="telefon" placeholder="" required>
+                    <input type="tel" id="tel" name="telefon" maxlenght="20" placeholder="" required>
+                    <label for="message">Message</label>
+                    <input type="text" id="message" maxlenght="250" name="mesaj" placeholder="Details..." required>
+                    <button type="button">Submit</button>
                 </form>
             
             </div>
@@ -160,15 +163,21 @@
                     <button class="button" onclick = "openForm()">Request quatation</button>
                </div>
                <!-- The popup form -->
-               <div class="form">
+               <div id="form">
+            
                 <form>
                     <h1 class="title">Request quotation</h1>
                     <label for="name">Individual/Company*</label>
                     <input type="text" id="name" name="name" maxlength="50" required>
                     <label for="tel">Telephone</label>
-                    <input type="tel" id="tel" name="telefon" placeholder="" required>
+                    <input type="tel" id="tel" name="telefon" maxlenght="20" placeholder="" required>
+                    <label for="message">Message</label>
+                    <input type="text" id="message" maxlenght="250" name="mesaj" placeholder="Details..." required>
+                    <button type="button">Submit</button>
+                    <button type="button">Close</button>
                 </form>
-                </div>
+            
+            </div>
         </div>
     </div>
     <div class="footer">

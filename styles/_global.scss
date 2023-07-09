@@ -1,7 +1,5 @@
 html,body {
     margin: 0%;
-    height: 100%;
-    width: 100%;
 }
 
 html{
@@ -11,6 +9,7 @@ html{
 body{
     position: absolute;
     font-family: $content_font;
+    width: 100%;
 }
 
 * {
