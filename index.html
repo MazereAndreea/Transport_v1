@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
-    <!-- In case I need to use JQuery: -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- In case I need to use jQuery: -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>VITAL COMIMPEX SRL</title>
 </head>
 
@@ -108,23 +108,10 @@
                 -->
             </h3>
             <div class="request_quotation">
-                <button onclick = "openForm()">Request quatation</button>
+                <button class="openForm" onclick = "blur()">Request quatation</button>
            </div>
            <!-- The popup form -->
-           <div id="form">
-            
-                <form>
-                    <h1 class="title">Request quotation</h1>
-                    <label for="name">Individual/Company*</label>
-                    <input type="text" id="name" name="name" maxlength="50" required>
-                    <label for="tel">Telephone</label>
-                    <input type="tel" id="tel" name="telefon" maxlenght="20" placeholder="" required>
-                    <label for="message">Message</label>
-                    <input type="text" id="message" maxlenght="250" name="mesaj" placeholder="Details..." required>
-                    <button type="button">Submit</button>
-                </form>
-            
-            </div>
+           
         </div>
         <div>
         <!-- picture -->
@@ -160,25 +147,25 @@
                 and secure transportation experience that will earn your trust and keep you coming back for all your
                 future travel needs.</p> 
                 <div class="request_quotation">
-                    <button class="button" onclick = "openForm()">Request quatation</button>
+                    <button class="openForm" onclick = "blur()">Request quatation</button>
                </div>
                <!-- The popup form -->
-               <div id="form">
-            
-                <form>
-                    <h1 class="title">Request quotation</h1>
-                    <label for="name">Individual/Company*</label>
-                    <input type="text" id="name" name="name" maxlength="50" required>
-                    <label for="tel">Telephone</label>
-                    <input type="tel" id="tel" name="telefon" maxlenght="20" placeholder="" required>
-                    <label for="message">Message</label>
-                    <input type="text" id="message" maxlenght="250" name="mesaj" placeholder="Details..." required>
-                    <button type="button">Submit</button>
-                    <button type="button">Close</button>
-                </form>
-            
-            </div>
         </div>
+    </div>
+    <div id="form">
+            
+        <form>
+            <h1 class="title">Request quotation</h1>
+            <label for="name">Individual/Company*</label>
+            <input type="text" id="name" name="name" maxlength="50" required>
+            <label for="tel">Telephone</label>
+            <input type="tel" id="tel" name="telefon" maxlenght="20" placeholder="" required>
+            <label for="message">Message</label>
+            <input type="text" id="message" maxlenght="250" name="mesaj" placeholder="Details..." required>
+            <button type="button">Submit</button>
+            <button onclick="closeForm()" type="button">Close</button>
+        </form>
+
     </div>
     <div class="footer">
         <div class="first">
@@ -196,7 +183,8 @@
             <h4>Email: <a href="#"></a></h4>
         </div>
     </div>
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/region.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>

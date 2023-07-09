@@ -1,29 +1,40 @@
 #form{
+
     display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    background: rgb(255, 106, 0);
+    background: rgb(96, 96, 96);
     border: 3px ridge;
     border-radius: 40px;
     text-align: center;
+    max-width: 400px;
+    //position in the center:
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
     form{
-      max-width: 400px;
       padding: 20px;
 
       input[type=text], input[type=tel]{
-        margin: 10px;
         width: 100%;
-     }
-
-      input[type=text]{
         padding: 10px;
-      }
+        margin-top: 10px;
+        margin-bottom: 10px;
+     }
 
       input[type=text]:focus, input[type=tel]:focus{
         outline: none;
       }
+
+      button{
+        padding: 6px 15px;
+        border-radius: 10px;
+        font-family: $content_font;
+        font-size: medium;
+      }
     }
     
 }
+
+
+
