@@ -335,26 +335,24 @@ button {
   font-family: Spartan, sans-serif;
 }
 
-.footer {
+#footer {
   height: 300px;
   width: 100%;
   background-color: #343a40;
   display: flex;
   color: white;
 }
-.footer .second {
+#footer .second {
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
-
-.first, .second, .third {
+#footer .first, #footer .second, #footer .third {
   flex: 1;
   margin: 20px 20px 20px 20px;
 }
-
-.third {
+#footer .third {
   text-align: center;
 }
-.third .title {
+#footer .third .title {
   padding-bottom: 20px;
 }/*# sourceMappingURL=styles.css.map */

@@ -214,7 +214,7 @@
 
 // Footer:
 
-.footer{
+#footer{
     height: 300px;
     width: 100%;
     background-color: $primary_color;
@@ -225,18 +225,18 @@
         border-left: 1px solid white;
         border-right: 1px solid white;
     }
-}
-
-.first, .second, .third{
-    flex: 1;
-    margin: 20px 20px 20px 20px;
-}
-
-.third{
-    text-align: center;
-
-    .title{
-        padding-bottom: 20px;
-    }
+    .first, .second, .third{
+      flex: 1;
+      margin: 20px 20px 20px 20px;
+  }
+  
+  .third{
+      text-align: center;
+  
+      .title{
+          padding-bottom: 20px;
+      }
+  }
+  
 }
 
