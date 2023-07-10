@@ -52,13 +52,13 @@ button {
 #form form {
   padding: 20px;
 }
-#form form input[type=text], #form form input[type=tel] {
+#form form input {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#form form input[type=text]:focus, #form form input[type=tel]:focus {
+#form form input:focus {
   outline: none;
 }
 #form form button {

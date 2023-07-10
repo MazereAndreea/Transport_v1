@@ -1,0 +1,14 @@
+{
+  "name": "transport",
+  "version": "1.0.0",
+  "description": "This website is the presentation of my father's transport firm, VITAL COMIMPEX SRL. <br> With more than 25 years of experience in the field, we offer tailor-made solutions to our customers and partners for domestic and international road transport with complete or partial vehicles, in strict compliance with the CMR Convention.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "country-state-city": "^3.1.4"
+  }
+}
