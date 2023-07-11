@@ -166,9 +166,27 @@
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" max="40" placeholder="E-mail" required>
 
-            <select id="incarcare">
+            <div class="select-country-state">
+                <div>
+                <label for="load-country"> Loading country </label>
+                <select id="load-country">
+                </select>  <!-- options are in country-states.json  js is in option-values.js -->
+                </div>
+                <div>
+                <label for="load-city"> Loading city </label>
+                <select id="load-city"></select>
+                </div>
+                <div>
+                <label for="unload-country"> Unloading country </label>
+                <select id="unload-country"></select>
+                </div>
+                <div>
+                <label for="unload-city"> Unloading city </label>
+                <select id="unload-city"></select>
+                </div>
                 
-            </select>
+            </div>
+
 
             <label for="message">Message</label>
             <input type="text" id="message" maxlenght="250" name="mesaj" placeholder="Details..." required>

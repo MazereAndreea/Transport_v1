@@ -37,26 +37,48 @@ button {
   cursor: pointer;
 }
 
+select {
+  margin: 0px;
+}
+
 #form {
   display: none;
   background: rgb(96, 96, 96);
   border: 3px ridge;
   border-radius: 40px;
   text-align: center;
-  max-width: 400px;
+  max-width: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 #form form {
-  padding: 20px;
+  padding: 30px;
+}
+#form form .select-country-state {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 50px 50px;
+  grid-template-columns: 150px 150px;
+  row-gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#form form .select-country-state select {
+  max-width: 150px;
+  margin-top: 10px;
 }
 #form form input {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+#form form select {
+  padding: 10px;
 }
 #form form input:focus {
   outline: none;
