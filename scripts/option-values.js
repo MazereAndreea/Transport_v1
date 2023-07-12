@@ -21,12 +21,21 @@ for(let i in countries){
 
 var select3 = document.getElementById("load-city");
 var select4 = document.getElementById("unload-city");
-const select = document.getElementById("load-country");
 
-select.addEventListener("change", function(){
-    const where = (element) => element = this.value;
-    console.log(countries.findIndex(where));
+select1.addEventListener("change", function(){
+
+    document.getElementById("loadCityJs").style.visibility = 'visible';
+    let position = countries.findIndex(element => element.country === this.value);
+    for(let i in countries[position].states){
+        var option = document.createElement("option");
+        option.text = countries[position].states[i];
+        option.value = countries[position].states[i];
+        select3.appendChild(option);
+    }
 });
+
+
+
 
 
     // for(let i in list_of_states){

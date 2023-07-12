@@ -71,6 +71,9 @@ select {
   max-width: 150px;
   margin-top: 10px;
 }
+#form form .select-country-state div:nth-child(2), #form form .select-country-state div:nth-child(4) {
+  visibility: hidden;
+}
 #form form input {
   width: 100%;
   padding: 10px;
@@ -90,109 +93,6 @@ select {
   font-size: medium;
 }
 
-@media only screen and (max-width: 1025px) and (min-width: 480px) {
-  #AboutUs {
-    flex-direction: column;
-  }
-  #Experience {
-    flex-direction: column;
-  }
-  #Experience .ExperiencePicture {
-    height: 400px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  #AboutUs {
-    gap: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    height: -moz-min-content;
-    height: min-content;
-    margin-bottom: 50px;
-  }
-  #AboutUs .AboutUsText {
-    border-radius: 20px;
-    flex: 2;
-    box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
-    background-color: #343a40;
-    color: #fff;
-  }
-  #AboutUs .AboutUsText .title {
-    font-style: italic;
-  }
-  #AboutUs .AboutUsText .title p {
-    font-size: 30px;
-  }
-  #AboutUs .AboutUsText p {
-    margin-left: 50px;
-    margin-right: 50px;
-    justify-content: center;
-    font-weight: bold;
-    font-size: large;
-    word-spacing: 3px;
-  }
-  #AboutUs .AboutUsText .request_quotation {
-    background-color: rgba(0, 97, 255, 0.7490196078);
-    width: -moz-fit-content;
-    width: fit-content;
-    float: right;
-    margin-right: 100px;
-    padding: 10px 10px 10px 10px;
-    border-style: ridge;
-    border-color: beige;
-    margin-bottom: 20px;
-  }
-  #AboutUs .AboutUsText + div {
-    flex: 1.5;
-    background-color: blue;
-  }
-  #Experience {
-    gap: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    height: -moz-min-content;
-    height: min-content;
-    margin-bottom: 50px;
-  }
-  #Experience .ExperiencePicture {
-    flex: 2;
-    background-color: blue;
-  }
-  #Experience .ExperienceText {
-    border-radius: 20px;
-    flex: 1.5;
-    box-shadow: 4px 4px 4px 4px rgb(175, 175, 175);
-    background-color: #343a40;
-    color: #fff;
-  }
-  #Experience .ExperienceText .title {
-    font-style: italic;
-  }
-  #Experience .ExperienceText .title p {
-    font-size: 30px;
-  }
-  #Experience .ExperienceText p {
-    margin-left: 50px;
-    margin-right: 50px;
-    justify-content: center;
-    font-weight: bold;
-    font-size: large;
-    word-spacing: 3px;
-  }
-  #Experience .ExperienceText .request_quotation {
-    background-color: rgba(0, 97, 255, 0.7490196078);
-    width: -moz-fit-content;
-    width: fit-content;
-    float: right;
-    margin-right: 100px;
-    padding: 10px 10px 10px 10px;
-    border-style: ridge;
-    border-color: beige;
-    margin-bottom: 20px;
-  }
-}
 /* For all the navbar */
 .Navbar {
   display: flex;
@@ -260,6 +160,15 @@ select {
   height: min-content;
   margin-bottom: 50px;
 }
+#AboutUs div:last-child {
+  flex: 1.5;
+  background-color: blue;
+}
+@media only screen and (max-width: 1025px) and (min-width: 480px) {
+  #AboutUs {
+    flex-direction: column;
+  }
+}
 #AboutUs .AboutUsText {
   border-radius: 20px;
   flex: 2;
@@ -299,10 +208,6 @@ select {
   font-size: medium;
   font-family: Spartan, sans-serif;
 }
-#AboutUs .AboutUsText + div {
-  flex: 1.5;
-  background-color: blue;
-}
 
 #Experience {
   gap: 50px;
@@ -313,7 +218,7 @@ select {
   height: min-content;
   margin-bottom: 50px;
 }
-#Experience .ExperiencePicture {
+#Experience div:first-child {
   flex: 2;
   background-color: blue;
 }
@@ -357,24 +262,24 @@ select {
   font-family: Spartan, sans-serif;
 }
 
-#footer {
+footer {
   height: 300px;
   width: 100%;
   background-color: #343a40;
   display: flex;
   color: white;
 }
-#footer .second {
+footer .second {
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
-#footer .first, #footer .second, #footer .third {
+footer .first, footer .second, footer .third {
   flex: 1;
   margin: 20px 20px 20px 20px;
 }
-#footer .third {
+footer .third {
   text-align: center;
 }
-#footer .third .title {
+footer .third .title {
   padding-bottom: 20px;
 }/*# sourceMappingURL=styles.css.map */

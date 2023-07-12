@@ -6,9 +6,6 @@
 
 @import "form";
 
-@import "tablet";
-@import "desktop";
-
 // 320px — 480px: Mobile devices
 // 481px — 768px: iPads, Tablets
 // 769px — 1024px: Small screens, laptops
@@ -98,6 +95,21 @@
     display: flex;
     height: min-content;
     margin-bottom: 50px;
+
+    div:last-child {
+      flex: 1.5;
+      background-color: blue;
+      @media only screen and (max-width: 1025px) and (min-width: 480px){
+          // style the image with 
+          // max-width: 100%;
+          // height: auto;
+      }
+    }
+
+    @media only screen and (max-width: 1025px) and (min-width: 480px){
+      flex-direction: column;
+    }
+
   
     .AboutUsText {
       border-radius: 20px;
@@ -142,11 +154,6 @@
       
         //the form is in the _form.scss file
       }
-
-      + div {
-        flex: 1.5;
-        background-color: blue;
-      }
   
     }
   }
@@ -161,9 +168,15 @@
     height: min-content;
     margin-bottom: 50px;
   
-    .ExperiencePicture {
+    div:first-child{
       flex: 2;
       background-color: blue;
+      @media only screen and (max-width: 1025px) and (min-width: 480px){
+        // style the image with 
+        // max-width: 100%;
+        // height: auto;
+      }
+
     }
   
     .ExperienceText {
@@ -207,14 +220,14 @@
           font-family: $content_font;
         }
       }
-       //the form is in the _form.scss file
     }
   }
-  
+
+//the form is in the _form.scss file
 
 // Footer:
 
-#footer{
+footer{
     height: 300px;
     width: 100%;
     background-color: $primary_color;
