@@ -2,6 +2,9 @@ import data from '/scripts/country-states.json' assert {type: 'json'};
 
 var select1 = document.getElementById("load-country");
 var select2 = document.getElementById("unload-country");
+var select3 = document.getElementById("load-city");
+var select4 = document.getElementById("unload-city");
+
 var countries = data.countries;
 
 for(let i in countries){
@@ -18,31 +21,38 @@ for(let i in countries){
 }
 
 //for loading cities based on country selected
-
-var select3 = document.getElementById("load-city");
-var select4 = document.getElementById("unload-city");
-
 select1.addEventListener("change", function(){
 
-    document.getElementById("loadCityJs").style.visibility = 'visible';
-    let position = countries.findIndex(element => element.country === this.value);
+    removeOptions(select3);
+    assignOptions(select3, this.value);
+});
+
+//for unloading cities based on country selected
+select2.addEventListener("change", function(){
+
+    removeOptions(select4);
+    assignOptions(select4, this.value);
+});
+
+
+//Function for removing the state options (when choosing another country)
+function removeOptions(element){
+    for(var i = element.options.length-1; i>=0; i--){
+        element.remove(i);
+    }
+}
+
+//for assigning states options for country selected
+function assignOptions(element, countrySelected){
+    let position = countries.findIndex(par => par.country === countrySelected);
     for(let i in countries[position].states){
         var option = document.createElement("option");
         option.text = countries[position].states[i];
         option.value = countries[position].states[i];
-        select3.appendChild(option);
+        element.appendChild(option);
     }
-});
+}
 
 
 
-
-
-    // for(let i in list_of_states){
-
-    //     var option = document.createElement("option");
-    //     option.text = countries[where].states[i];
-    //     option.value = countries[i].country;
-    //     select3.appendChild(option);
- 
 
