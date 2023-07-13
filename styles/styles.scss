@@ -178,6 +178,10 @@
       }
 
     }
+
+    @media only screen and (max-width: 1025px) and (min-width: 480px){
+      flex-direction: column;
+    }
   
     .ExperienceText {
       border-radius: 20px;

@@ -222,6 +222,11 @@ select {
   flex: 2;
   background-color: blue;
 }
+@media only screen and (max-width: 1025px) and (min-width: 480px) {
+  #Experience {
+    flex-direction: column;
+  }
+}
 #Experience .ExperienceText {
   border-radius: 20px;
   flex: 1.5;
